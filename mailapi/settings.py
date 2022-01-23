@@ -19,7 +19,10 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-^t7rlhhj%s7ykh2rxtax=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+if DEBUG==False
+    ALLOWED_HOSTS = ['manuel-mailapi.herokuapp.com']
+else:
+    ALLOWED_HOSTS = ['*']
 
 
 # Application definition
