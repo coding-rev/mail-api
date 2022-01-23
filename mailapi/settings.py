@@ -139,6 +139,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
 if DEBUG==False:
     django_on_heroku.settings(locals())
     db_from_env=dj_database_url.config(conn_max_age=600)
