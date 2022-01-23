@@ -15,10 +15,10 @@ submitContactFormThroughApi(){
 			headers,
 			body: JSON.stringify(body),
 	})
-	.then((response){
+	.then((response)=>{
 		alert("Sent")
 	})
-	.catch((e){
+	.catch((e)=>{
 		alert("Couldn't send mail.")
 	})
 };
