@@ -17,9 +17,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-^t7rlhhj%s7ykh2rxtax=6mh_b6sfy*(j#8p9c!k6_+z8d)s81")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-if DEBUG==False
+if DEBUG==False:
     ALLOWED_HOSTS = ['manuel-mailapi.herokuapp.com']
 else:
     ALLOWED_HOSTS = ['*']
